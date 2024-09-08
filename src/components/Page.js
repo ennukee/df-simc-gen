@@ -56,6 +56,16 @@ const defaultState = {
 }
 
 export default function Page() {
+
+  return (
+    <div id="main">
+      <Title order={1}>We've updated for TWW!</Title>
+      <Text size="md">
+        <a href="https://dbowers.io/tww-simc-gen/">Click here to go to the updated site</a>
+      </Text>
+    </div>
+  )
+
   const [toggleData, toggleDispatch] = useReducer(reducer, defaultState)
   const [simcString, setSimcString] = useState('');
   const [error, setError] = useState('');
